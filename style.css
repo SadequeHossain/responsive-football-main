@@ -1,0 +1,191 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* overflow-x: hidden;  */
+}
+
+header{
+    display: block;
+}
+  /* Banner style */
+.container{
+    width: 100%;
+    
+}
+.banner{
+    
+    display: flex;
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+    
+    
+}
+.banner:hover{
+    border: 2px solid red;
+    box-shadow: 10px 10px 40px 0 rgb(0, 0, 0, 0.5);
+}
+
+
+
+.banner-title{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-weight: 700;
+    font-size: 25px;
+    width: 485px;
+    height: 320px;
+     margin-left: 156px; 
+    margin-top: 207px;
+    align-items: center;
+    /* margin-right: 5%; */
+}
+.banner-image{
+    width: 556px;
+    height: 456px; 
+    justify-content: center;
+     margin-left: 102px; 
+     margin-top: 135px;
+     margin-bottom: 150px;
+    
+}
+.banner .banner-image img{
+    width: 556px;
+    height: 456px;
+    
+}
+
+
+
+.btn{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+}
+.btn a{
+    text-decoration:none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 2px 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Player history style */
+
+
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.player{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    background-color: white;
+    width: 330px;
+    height: 474px;
+    
+    /* margin-right:210px ; */
+   padding: 15px;
+   text-align: justify;
+   box-shadow: 10px 10px 10PX 10px lightgray;
+  border-radius: 10PX;
+  margin-bottom: 27PX;
+    
+   
+}
+
+
+
+
+.players .player .player-photo img{
+    width: 300px;
+    height: 256px;
+    
+
+}
+/* footer */
+.footer-1{
+    
+    height: 213;
+    /* border: 1px solid red; */
+    
+    text-align: center
+}
+footer #logo img{
+    width: 483.87px;
+   height: 110px;
+}
+
+footer #social-connect img{
+    width: 32px;
+    height: 32px;
+}
+
+/* Responsiveness for Mobile  */
+
+@media only screen and (max-width: 688px){
+    body{
+        padding-left: 1%;
+    }
+    .container{
+        justify-content: center;
+    }
+       
+    
+     /* Banner Design */
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 695px;
+        justify-items: center;
+        
+        
+    }
+    .banner-title{
+        margin-left:16px;
+        margin-top: 112px;
+        width: 278px;
+        height: 138px;  
+        font-size: 18px;
+    }
+    
+    .banner-image{
+        margin-bottom: 62px;
+        padding: 15px;
+    }
+    .banner .banner-image img{
+        width: 329px;
+        height: 259.17px;
+
+    }
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+
+    }
+
+    footer #logo img{
+        width: 271px;
+        height: 63pxpx;
+    }
+
+}
