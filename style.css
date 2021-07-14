@@ -177,7 +177,7 @@ td{
 }
 .match-update{
     justify-items: center;
-    margin-left: 15%;
+    margin-left: 5%;
     
 }
 
@@ -196,7 +196,7 @@ td{
 
 .update p:hover{
     font-size: 16px;
-    color: blue;
+    color: rgba(173, 216, 230, 0.473);
     font-weight: 700;
 }
 
